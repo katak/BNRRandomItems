@@ -15,30 +15,25 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        // Create a mutable array object, store its address in items variable
         NSMutableArray *items = [[NSMutableArray alloc] init];
         
-        for (int i = 0; i < 10; i++) {
-            BNRItem *item = [BNRItem randomItem];
-            [items addObject:item];
-        }
+        // Create a mutable array object, store its address in items variable
+        BNRItem *backpack = [[BNRItem alloc] initWithItemName:@"Backpack"];
+        [items addObject:backpack];
+        
+        BNRItem *calculator = [[BNRItem alloc] initWithItemName:@"Calculator"];
+        [items addObject:calculator];
+        
+        backpack.containedItem = calculator;
+        
+        backpack = nil;
+        calculator = nil;
         
         for (BNRItem *item in items) {
             NSLog(@"%@", item);
         }
         
-        BNRContainer *itemAsContainer = [[BNRContainer alloc] initWithItemName:@"SmallBox"
-                                                                valueInDollars:10000
-                                                                itemsContained:items];
-        [items insertObject:itemAsContainer atIndex:items.count];
-        
-        BNRContainer *container = [[BNRContainer alloc] initWithItemName:@"BigBox"
-                                                          valueInDollars:5000
-                                                          itemsContained:items];
-        
-        NSLog(@"\n\n\n%@", container);
-        
-        // Destroy the mutable array object
+        NSLog(@"Setting items to nil...");
         items = nil;
         
     }
