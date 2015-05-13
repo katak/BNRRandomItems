@@ -11,6 +11,7 @@
 		01033F6C1AFDDAC2008EC606 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01033F6B1AFDDAC2008EC606 /* main.m */; };
 		01033F701AFDDAC2008EC606 /* RandomItems.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01033F6F1AFDDAC2008EC606 /* RandomItems.1 */; };
 		01033F781AFDE0BB008EC606 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01033F771AFDE0BB008EC606 /* BNRItem.m */; };
+		011F64771B03D48600BDDF7D /* BNRContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F64761B03D48600BDDF7D /* BNRContainer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		01033F6F1AFDDAC2008EC606 /* RandomItems.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RandomItems.1; sourceTree = "<group>"; };
 		01033F761AFDE0BB008EC606 /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
 		01033F771AFDE0BB008EC606 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
+		011F64751B03D48600BDDF7D /* BNRContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRContainer.h; sourceTree = "<group>"; };
+		011F64761B03D48600BDDF7D /* BNRContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 				01033F6B1AFDDAC2008EC606 /* main.m */,
 				01033F761AFDE0BB008EC606 /* BNRItem.h */,
 				01033F771AFDE0BB008EC606 /* BNRItem.m */,
+				011F64751B03D48600BDDF7D /* BNRContainer.h */,
+				011F64761B03D48600BDDF7D /* BNRContainer.m */,
 				01033F6F1AFDDAC2008EC606 /* RandomItems.1 */,
 				01033F6D1AFDDAC2008EC606 /* Supporting Files */,
 			);
@@ -146,6 +151,7 @@
 			files = (
 				01033F6C1AFDDAC2008EC606 /* main.m in Sources */,
 				01033F781AFDE0BB008EC606 /* BNRItem.m in Sources */,
+				011F64771B03D48600BDDF7D /* BNRContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +265,7 @@
 				01033F751AFDDAC2008EC606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

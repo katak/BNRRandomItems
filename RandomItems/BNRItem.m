@@ -65,8 +65,16 @@
         _dateCreated = [[NSDate alloc] init];
     }
     
-    // Return the address of teh newly initialized object
+    // Return the address of the newly initialized object
     return self;
+}
+
+- (instancetype)initWithItemName:(NSString *)name
+                    serialNumber:(NSString *)sNumber
+{
+    return [self initWithItemName:name
+                   valueInDollars:0
+                     serialNumber:sNumber];
 }
 
 - (instancetype)initWithItemName:(NSString *)name

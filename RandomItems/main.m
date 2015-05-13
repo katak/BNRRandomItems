@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BNRItem.h"
+#import "BNRContainer.h"
 
 int main(int argc, const char * argv[])
 {
@@ -25,6 +26,17 @@ int main(int argc, const char * argv[])
         for (BNRItem *item in items) {
             NSLog(@"%@", item);
         }
+        
+        BNRContainer *itemAsContainer = [[BNRContainer alloc] initWithItemName:@"SmallBox"
+                                                                valueInDollars:10000
+                                                                itemsContained:items];
+        [items insertObject:itemAsContainer atIndex:items.count];
+        
+        BNRContainer *container = [[BNRContainer alloc] initWithItemName:@"BigBox"
+                                                          valueInDollars:5000
+                                                          itemsContained:items];
+        
+        NSLog(@"\n\n\n%@", container);
         
         // Destroy the mutable array object
         items = nil;
